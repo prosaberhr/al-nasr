@@ -1,0 +1,87 @@
+@import 'color';
+
+
+// Airways Accomadation 
+.airways {
+    display: flex;
+	margin-top: 84px;
+}
+.airways-title {
+	width: 10px;
+	font-size: 32px;
+	font-weight: bold;
+	line-height: 140%;
+	font-family: $text-font-family;
+	color: $primary-text;
+}
+.airways-title:hover{
+	color: $primary-text-hover;
+}
+.airways-slider {
+	width: 75% !important;
+	margin-top: 30px;
+}
+.airways-description{
+	width: 295px;
+	height: 72px;
+	font-family: 'Nunito';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 19px;
+	line-height: 150%;
+	color: #454545;
+}
+.airways-img {
+	width: 75% !important;
+	margin-top: 16px;
+}
+.rating-star{
+	color: $primary-button;
+}
+.rating-airways {
+	display: flex;
+	gap: 9px;
+	background: #C1FFFA;
+	width: 121px;
+	padding: 8px;
+	border-radius: 20px;
+	text-align: center;
+	color: $bg;
+}
+
+
+
+
+// Hero Section responsive 
+
+
+@media only screen and (min-width: 992px) and (max-width: 1400px) {
+    .container{
+        width:100%;
+    }
+    .airways-slider {
+		width: 65% !important;
+		margin-top: 30px;
+	}
+
+}
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .container{
+        width:99%;
+    }
+	.airways-slider {
+		width: 55% !important;
+		margin-top: 45px;
+	}
+
+}
+  @media only screen and (max-width: 767px) {
+   
+	.container{
+		width: 99%;
+	}
+	.airways-slider {
+		width: 58% !important;
+		margin-top: 49px;
+	}
+}

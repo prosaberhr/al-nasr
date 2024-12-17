@@ -1,0 +1,75 @@
+@import 'base/reset';
+@import 'util/color';
+@import 'mediaquery/responsive';
+
+
+// ////// Gallery css //////////////////////
+
+
+.pageheader{
+    background: $bg;
+    height: 20rem;
+}
+.pageheader__left h3{
+    display: flex;
+    justify-content: center;
+    line-height:311px ;
+    font-family: $text-font-family;
+    color: white;
+    font-size: 70px;
+}
+.section__header h2{
+    font-family: $text-font-family;
+    color: $primary-text;
+    font-size: 40px;
+}
+.section__header p{
+    font-family: $text-font-family;
+    color: $primary-text;
+}
+.gallery__item{
+    display: flex;
+    justify-content: center;
+}
+.hajj-img {
+	width: 67%;
+}
+
+
+// pageber
+.pageber {
+	display: flex;
+	justify-content: end;
+	gap: 40px;
+	margin-right: 31px;
+}
+.number-page{
+    display: flex;
+    gap: 40px;
+    margin-top: 10px;
+}
+.number-one{
+    padding: 5px 5px;
+}
+.number-one:hover{
+    color:#ffc265;
+}
+.numbers{
+    padding: 5px 5px;
+   color: $primary-text;
+}
+.numbers:hover{
+    color:#ffc265 ;
+    
+}
+
+.left-arow {
+	background: #ffc265;
+	padding: 16px 29px;
+	border-radius: 10%;
+}
+.right-arow {
+	background: #ffc265;
+	padding: 16px 29px;
+	border-radius: 10%;
+}

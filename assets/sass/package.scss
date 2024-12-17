@@ -1,0 +1,280 @@
+
+@import 'base/reset';
+@import 'util/color';
+@import 'mediaquery/responsive';
+
+// ////////package css////////////////
+.bannr-section {
+   
+    height: 16rem;
+    background-color: $bg;
+}
+.bannr-text h2 {
+    color: white;
+    font-size: 70px;
+    line-height: 244px;
+    font-family: $text-font-family;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.travel-package-list {
+    text-align: justify;
+}
+.travel-package-list h4 {
+    font-weight: bold;
+    font-size: 20px;
+    border-bottom: 3px solid var(--theme-colour);
+    display: inline-block;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.travel-package {
+    background-color: $bg;
+    padding: 20px;
+    border-top-right-radius: 170px;
+    border: 3px solid $bg;
+}
+.travel-package h4 {
+    font-size: 22px;
+    font-family: var(--common-font);
+}
+.travel-package.two {
+    background-color: $section-bg;
+    border: 3px solid $bg;
+}
+.travel-package.two ul li {
+    color: $primary-text;
+}
+.package-reat {
+    padding-top: 30px;
+    padding-left: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.travel-package h5 {
+    font-size: 49px;
+    font-weight: 900;
+    color: var(--common-colour);
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.travel-package h5 span {
+    font-weight: 400;
+    padding-left: 10px;
+    font-size: 16px;
+    color: #000;
+}
+.travel-package .btn {
+    width: 100%;
+    margin-top: 16px;
+    border: 3px solid var(--theme-colour);
+    background-color: transparent;
+}
+.travel-package .btn:after {
+    background-color: var(--theme-colour);
+}
+.travel-package-list {
+    background-color: #fff;
+    padding: 30px;
+}
+.travel-package.two .btn {
+    background-color: var(--theme-colour);
+}
+.travel-package-list ul li {
+    padding-bottom: 13px;
+    display: flex;
+    align-items: center;
+}
+.travel-package-list ul li i {
+    padding-right: 13px;
+    color: var(--theme-colour);
+    font-size: 22px;
+}
+.package-reat i svg {
+    width: 46px;
+    height: auto;
+}
+.package-reat i {
+    justify-content: center;
+    width: 88px;
+    height: 88px;
+    background-color: var(--theme-colour);
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: -21px;
+}
+.package-name{
+   text-align: center;
+   padding-bottom: 80px;
+   font-family: $text-font-family;
+   font-size: 24px;
+   font-weight: bold;
+}
+.gap {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.masjid {
+    padding-top: 200px;
+    padding-bottom: 150px;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-y: bottom;
+    position: relative;
+}
+.masjid:before {
+    top: 19%;
+    animation: top 10s ease-in-out;
+    z-index: -1;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    content: "";
+    background-color: var(--theme-colour);
+    border-radius: 50%;
+    right: 20%;
+}
+.masjid-text h3 {
+    font-size: 60px;
+    width: 57%;
+}
+.masjid-text h3 span {
+    display: inline-block;
+    border-bottom: 5px solid var(--theme-colour);
+    line-height: 49px;
+}
+.masjid-text p {
+    padding-top: 6px;
+    padding-bottom: 30px;
+}
+
+.footer-logo h3 {
+    font-size: 18px;
+    padding-top: 10px;
+    color: var(--theme-colour);
+}
+.footer-top {
+    padding-bottom: 80px;
+    border-bottom: 1px solid #314e3f;
+    margin-bottom: 80px;
+}
+/* 29. subscribe */
+.subscribe input {
+    width: 100%;
+    height: 59px;
+    border-radius: 51px;
+    padding-left: 30px;
+    outline: none;
+    padding-right: 164px;
+    border: 0;
+}
+.subscribe {
+    position: relative;
+    display: flex;
+}
+.subscribe button {
+    position: absolute;
+    right: 3.5px;
+    top: 3.6px;
+    padding: 18px 40px;
+}
+
+ul.social-media {
+    display: flex;
+    align-items: center;
+}
+.connect-with h4 {
+    color: #fff;
+    padding-bottom: 20px;
+    font-family: var(--common-font);
+}
+ul.social-media li {
+    margin-right: 10px;
+}
+ul.social-media i {
+    width: 48px;
+    height: 48px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 51%;
+    font-size: 18px;
+    color: white;
+    border: 3px solid var(--theme-colour);
+}
+ul.social-media i:hover {
+    background-color: var(--theme-colour);
+    color: #000;
+}
+
+
+@media(max-width: 1400px){
+    .bannr-text h2 {
+        font-size: 58px;
+        line-height: 56px;
+    }
+    .gap {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .travel-package h4 {
+        font-size: 20px;
+    }
+}
+@media(max-width: 1200px){
+    .bannr-section {
+        padding-top: 100px;
+        padding-bottom: 30px;
+    }
+    .travel-package {
+        padding: 10px;
+      }
+    .travel-package h5 {
+        font-size: 34px;
+    }
+    .travel-package-list {
+        padding: 26px;
+    }
+}
+@media(max-width: 993px){
+    .gap {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .bannr-text h2 {
+        font-size: 46px;
+        line-height: 46px;
+    }
+    .travel-package {
+        margin-bottom: 40px;
+    }
+}
+@media(max-width: 768px){
+
+}
+@media(max-width: 576px){
+    .gap {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .travel-package-list {
+        padding: 15px;
+      }
+}
+@media(max-width: 450px){
+    .bannr-section {
+        padding-top: 66px;
+        padding-bottom: 30px;
+    }
+    .bannr-text h2 {
+        padding-top: 10px;
+        font-size: 36px;
+        line-height: 46px;
+        text-align: center;
+    }
+}

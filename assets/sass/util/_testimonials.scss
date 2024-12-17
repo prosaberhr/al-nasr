@@ -1,0 +1,266 @@
+@import 'color';
+
+
+// Testimonials
+
+.review-title {
+	width: 860px;
+	height: 152px;
+	font-family: "Kufam";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 54px;
+	line-height: 140%;
+	text-align: right;
+	color: #4a4a4a;
+	margin-left: 26rem; 
+}
+
+.review-title:hover{
+    color: $primary-text-hover;
+}
+
+.review-description{
+	width: 660px;
+	height: 72px;
+	font-family: 'Nunito';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 150%;
+	text-align: right;
+	color: $primary-text;
+	margin-left: 38rem;
+}
+
+.review-carousel {
+	width: 90px;
+	height: 92px;
+	border-radius: 10px;
+}
+.review-card {
+	display: flex;
+	padding: 20px 26px;
+	gap: 10px;
+	width: 422px;
+	height: 173px;
+	background: #fff;
+	border-radius: 10px;
+	margin-right: 26px;
+}
+.review-star{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 4px 11px;
+	gap: 6px;
+	width: 55px;
+	height: 22px;
+	background: #C1FFFA;
+	border-radius: 20px;
+}
+.company-name {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 20px;
+	gap: 10px;
+	width: 143px;
+	height: 29px;
+	background: #c1fffa;
+	border-radius: 20px;
+	color: $bg;
+}
+.point{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 55px;
+	height: 22px;
+	background: #C1FFFA;
+	border-radius: 20px;
+}
+.review-star {
+	color: #ffc265;
+	margin-top: 25px;
+	margin-left: 10px
+}
+
+.member-name{
+	width: 177px;
+	height: 36px;
+	font-family: 'Kufam';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 80%;
+	color: #4A4A4A;
+}
+.member-name:hover{
+	color: $primary-text-hover;
+}
+.review-text{
+	width: 301px;
+	height: 84px;
+	font-family: 'Nunito';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 117%;
+	color: #454545;
+}
+
+
+
+
+// Hero Section responsive 
+
+
+@media only screen and (min-width: 992px) and (max-width: 1400px) {
+    .container{
+        width:100%;
+    }
+	.review-card{
+        margin-right: 0px;
+        padding: 8px;
+    }
+    .review-star {
+        font-size: 0.8rem;
+    }
+    .review-text {
+        width: 190px;
+        font-size: 9px;
+    }
+    .review-title {
+		margin-left: 0;
+		width: 100%;
+		font-size: 37px;
+		text-align: center;
+	}
+    .review-description {
+		margin-left: 0;
+		width: 100%;
+		font-size: 17px;
+		text-align: center;
+		margin-top: -94px;
+	}
+    .review-btn {
+		width: 118px !important;
+		height: 46px !important;
+		font-size: 16px !important;
+    }
+    .company-name {
+        width: 142px;
+        font-size: 10px;
+    }
+    .member-name{
+        font-size: 20px;
+    }
+    .next-button {
+		width: 118px !important;
+		height: 46px !important;
+		font-size: 16px !important;
+		margin-left: 49rem !important;
+	}
+
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .container{
+        width:99%;
+    }
+	.review-card {
+		margin-right: 0px;
+		padding: 8px;
+		width: 16rem;
+	}
+    .review-star {
+        font-size: 0.8rem;
+    }
+    .review-text {
+        width: 159px;
+        font-size: 9px;
+    }
+	.review-title {
+		margin-left: 0;
+		width: 100%;
+		font-size: 37px;
+		text-align: center;
+	}
+    .review-description {
+		margin-left: 0;
+		width: 100%;
+		font-size: 17px;
+		text-align: center;
+		margin-top: -94px;
+	}
+    .review-btn {
+		width: 118px !important;
+		height: 46px !important;
+		font-size: 16px !important;
+    }
+    .company-name {
+        width: 142px;
+        font-size: 10px;
+    }
+    .member-name{
+        font-size: 20px;
+    }
+    .next-button {
+		width: 118px !important;
+		height: 46px !important;
+		font-size: 16px !important;
+		margin-left: 38rem !important;
+	}
+
+}
+  @media only screen and (max-width: 767px) {
+   
+	.container{
+		width: 99%;
+	}
+	.review-card {
+		width: 16rem;
+	}
+    .review-star {
+        font-size: 0.8rem;
+    }
+    .review-text {
+		width: 147px;
+		font-size: 8px;
+	}
+	.review-title {
+		margin-left: 0;
+		width: 100%;
+		font-size: 37px;
+		text-align: center;
+	}
+    .review-description {
+		margin-left: 0;
+		width: 100%;
+		font-size: 17px;
+		text-align: center;
+		margin-top: -94px;
+	}
+    .review-btn {
+		width: 118px !important;
+		height: 46px !important;
+		font-size: 16px !important;
+    }
+    .company-name {
+        width: 142px;
+        font-size: 10px;
+    }
+    .member-name{
+        font-size: 20px;
+    }
+    .next-button {
+		width: 118px !important;
+		height: 46px !important;
+		font-size: 16px !important;
+		margin-left: 35rem !important;
+	}
+}
+
+
+

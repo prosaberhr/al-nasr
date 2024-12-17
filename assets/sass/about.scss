@@ -1,0 +1,273 @@
+$primary-text:rgba(82, 82, 82, 1);
+$secondary-color: #18bc9c;
+$text-color: #333;
+$bg-color: #1DA599;
+$hover-color:#FFC265;
+$primary-text-hover:rgba(29, 165, 153, 1);
+$button-font-family:'Nunito';
+$text-font-family:'Kufam';
+
+@import 'mediaquery/responsive';
+@import 'base/reset';
+@import 'util/navber';
+* {
+  margin: 0;
+  padding: 0;
+  
+}
+a{
+    text-decoration: none;
+}
+
+/*-- Page Banner Section --*/
+.page-banner-section {
+  background: $bg-color;
+  padding: 230px 0; }
+  @media only screen and (min-width: 1200px) and (max-width: 1600px) {
+    .page-banner-section {
+      padding: 150px 0; } }
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .page-banner-section {
+      padding: 150px 0; } }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .page-banner-section {
+      padding: 120px 0; } }
+  @media only screen and (max-width: 567px) {
+    .page-banner-section {
+      padding: 100px 0; } }
+  @media only screen and (max-width:320px) {
+    .page-banner-section {
+      padding: 60px 0; } }
+  .page-banner-section .page-title h1 {
+    font-size: 40px;
+    line-height: 1;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    margin: 0; 
+    font-family: $text-font-family;}
+    @media only screen and (max-width: 767px) {
+      .page-banner-section .page-title h1 {
+        font-size: 24px; } }
+    @media only screen and (max-width: 320px) {
+      .page-banner-section .page-title h1 {
+        font-size: 18px; } }
+
+            
+
+
+
+/*  About Section
+/*----------------------------------------*/
+/*-- About image --*/
+.about-image a {
+  display: block;
+  position: relative;
+  margin-left: 65px; }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .about-image a {
+      margin-left: 0; } }
+  @media only screen and (max-width: 767px) {
+    .about-image a {
+      margin-left: 0; } }
+  .about-image a::before {
+    content: "\f04b";
+    font-family: 'Fontawesome';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -30px;
+    margin-top: -30px;
+    background-color: #ffffff;
+    color: $bg-color;
+    width: 60px;
+    height: 60px;
+    font-size: 22px;
+    text-align: center;
+    line-height: 62px;
+    padding-left: 2px;
+    z-index: 9;
+    border-radius: 50%; }
+  .about-image a:hover::before {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2); }
+  .about-image a::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    z-index: 1;
+    content: "";
+    opacity: 0.25; }
+  .about-image a img {
+    width: 100%; }
+
+/*-- About Content --*/
+.about-content {
+	margin-top: 40px;
+	font-family: "Kufam";
+	font-size: 18px;}
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .about-content {
+      margin-top: 0; } }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .about-content {
+      margin-top: 0; } }
+  @media only screen and (max-width: 767px) {
+    .about-content {
+      margin-top: 0; } }
+  .about-content h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 20px; }
+    .about-content h2 span {
+      color: $bg-color; }
+  .about-content a.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px;
+    gap: 10px;
+    width: 174px;
+    height: 64px;
+    border-radius: 10px;
+    color: #525252;
+    font-size: 18px;
+    font-weight: bold;
+    background: #ffc265;}
+    .about-content a.button:hover {
+      border: 2px solid $secondary-color;
+      color: $secondary-color;
+      background-color: #ffffff;
+      box-shadow: 10px 10px 5px lightblue; }
+
+
+
+/*-- Team Wrapper --*/
+.team-wrapper {
+  margin: 0; 
+  font-family: $text-font-family;
+}
+
+.section-title{
+  font-family: $text-font-family;
+  font-family: "Kufam";
+  color: #525252;
+  margin-top: 78px;
+}
+
+.section-title h1{
+  font-size: 3rem;
+  font-weight:bold;
+}
+
+/*-- Single Team --*/
+.single-team {
+  padding: 0;
+  position: relative; }
+  .single-team::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-color: $bg-color;
+    opacity: 0; }
+  .single-team img {
+    width: 100%; }
+  .single-team .content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    padding: 0 30px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-align: center; }
+    .single-team .content h4 {
+      margin-bottom: 30px;
+      color: #ffffff;
+      text-transform: uppercase;
+      font-size: 18px;
+      font-weight: 700;
+      -webkit-transition: all 0.3s ease 0s;
+      -o-transition: all 0.3s ease 0s;
+      transition: all 0.3s ease 0s;
+      opacity: 0; }
+    .single-team .content span {
+      color: #ffffff;
+      display: block;
+      text-transform: uppercase;
+      font-size: 12px;
+      opacity: 0;
+      font-weight: 700; }
+  .single-team:hover::before {
+    opacity: 0.8; }
+  .single-team:hover .content h4 {
+    margin-bottom: 10px;
+    opacity: 1; }
+  .single-team:hover .content span {
+    opacity: 1; }
+
+/*-- Single Fact --*/
+.funfact-section.section.pb-90 {
+	margin-top: 7rem;
+}
+.single-fact .wrap {
+  text-align: left;
+  display: inline-block; }
+  .single-fact .wrap i {
+    font-size: 24px;
+    margin-right: 10px;
+    display: inline-block;
+    color: #4d4d4d; }
+  .single-fact .wrap h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    display: inline-block;
+    margin-bottom: 0; }
+  .single-fact .wrap p {
+    text-transform: uppercase;
+    margin-bottom: 0;
+    margin-top: 10px;
+    display: block;
+    width: 100%; }
+
+    .airway-carousel {
+      padding: 97px;
+      object-fit: cover;
+      width: 360px;
+      margin-left: 66px;
+      margin-top: -65px;
+    }
+
+      .airways-titles {
+        font-size: 43px;
+        font-weight: bold;
+        line-height: 140%;
+        font-family: "Kufam";
+        color: #525252;
+        margin-top: 78px;
+      }
+      .airways-titles:hover{
+        color: $primary-text-hover;
+      }
+      .airways-descriptions {
+        height: 72px;
+        font-family: "Nunito";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 19px;
+        line-height: 285%;
+        color: #454545;
+      }
+      .airways-descriptions:hover{
+        color: $primary-text-hover;
+      }   
+
+

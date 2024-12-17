@@ -1,0 +1,240 @@
+@import 'color';
+
+// Footer all Css
+
+.footer {
+	background: #1da599;
+	padding: 40px;
+}
+.footer-img {
+	width: 294px;
+	height: 79px;
+}
+.img-text {
+	margin-top: 14px;
+	width: 294px;
+	height: 44px;
+	font-family: 'Nunito';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 22px;
+	color: #FFFFFF;
+}
+.img-text:hover{
+	color: $primary-button;
+}
+.Quick-Link h4{
+	color: #F3FFFE;
+}
+.Quick-Link p {
+	color: #f3fffe;
+	margin-top: 31px;
+	line-height: 4px;
+}
+.Quick-Link{
+	color: #F3FFFE;
+}
+.Quick-Link p:hover{
+	color: $primary-button;
+}
+.Quick-Link h4:hover{
+	color: $primary-button;
+}
+.Package-Umrah h4{
+	color: #F3FFFE;
+}
+.Package-Umrah p {
+	color: #f3fffe;
+	margin-top: 31px;
+	line-height: 4px;
+}
+.Package-Umrah p:hover{
+	color: $primary-button;
+}
+.Package-Umrah h4:hover{
+	color: $primary-button;
+}
+
+.Package-Hajj h4{
+	color: #F3FFFE;
+}
+.Package-Hajj p{
+	color: #f3fffe;
+	margin-top: 31px;
+	line-height: 4px;
+}
+.Package-Hajj p:hover{
+	color: $primary-button;
+}
+.Package-Hajj h4:hover{
+	color: $primary-button;
+}
+
+.Office-Place h4{
+	color: #F3FFFE;
+}
+.Office-Place p{
+	color: #f3fffe;
+	margin-top: 31px;
+	line-height: 4px;
+}
+.Office-Place p:hover{
+	color: $primary-button;
+}
+.Office-Place h4:hover{
+	color: $primary-button;
+}
+.copy-right-icons{
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+}
+hr {
+	color: #f3fffe;
+	height: 12px;
+}
+.copy-rights-text{
+	color: #f3fffe;
+
+}
+
+.icons{
+    display: flex;
+	margin-right: 12px;
+	gap: 25px;
+}
+.icon-link {
+	display: block;
+	background: #fff;
+	border-radius: 6px;
+	color: #1da599;
+	padding: 8px 9px;
+}
+
+.icon-link:hover {
+	background: #ffc265;
+	color: #c1fffa;
+	box-shadow: 7px 2px 5px #e6d9ad;
+}	
+
+
+// footer responsive 
+
+
+@media only screen and (min-width: 992px) and (max-width: 1400px) {
+    
+	.footer-img {
+        margin-top: 25px;
+    }
+	.img-text {
+		text-align: center;
+		font-size: 12px;
+		width: 98%;
+	}
+    .Quick-Link {
+		margin-top: 25px;
+		text-align: center;
+		font-size: 12px;
+	}
+    .Package-Umrah{
+        margin-top: 25px;
+		text-align: center;
+		font-size: 12px;
+    }
+    .Package-Hajj{
+        margin-top: 25px;
+		text-align: center;
+		font-size: 12px;
+    }
+    .Office-Place{
+        margin-top: 25px;
+		text-align: center;
+		font-size: 12px;
+    }
+    .copy-right-icons{
+        gap: 0px;
+    }
+    .copy-rights-text{
+        text-align: center;
+        margin-top: 20px;
+    }
+    .icons{
+		display: flex;
+        justify-content: center;
+    }
+	 
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.footer-img {
+        margin-top: 50px;
+    }
+	.img-text{
+		text-align: center;
+	}
+    .Quick-Link {
+        margin-top: 60px;
+		text-align: center;
+		
+    }
+    .Package-Umrah{
+        margin-top: 0px;
+		text-align: center;
+    }
+    .Package-Hajj {
+		margin-top: 25px;
+		text-align: center;
+	}
+    .Office-Place{
+        margin-top: 25px;
+		text-align: center;
+    }
+	.copy-right-icons{
+        flex-direction:column-reverse;
+        gap: 0px;
+    }
+    .copy-rights-text{
+        text-align: center;
+        margin-top: 50px;
+    }
+	.icons {
+		margin: 0 auto;
+	}
+    
+}
+@media only screen and (max-width: 767px) {
+    .container, .container-sm {
+		max-width: 100% !important;
+	}
+	.footer-img {
+        margin-top: 50px;
+    }
+    .Quick-Link {
+        margin-top: 25px;
+    }
+    .Package-Umrah{
+        margin-top: 25px;
+    }
+    .Package-Hajj{
+        margin-top: 25px;
+    }
+    .Office-Place{
+        margin-top: 25px;
+    }
+    .copy-right-icons{
+        flex-direction:column-reverse;
+        gap: 0px;
+    }
+    .copy-rights-text{
+        text-align: center;
+        margin-top: 20px;
+    }
+    .icons{
+    justify-content: center;
+    margin-left: 0px}}
+
+
+
+
+
+

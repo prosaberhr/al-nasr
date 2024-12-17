@@ -1,0 +1,236 @@
+@import 'color';
+
+
+
+
+/* Al Nasr Special Umrah and Hajj Packages */
+.package-title {
+	font-family: "Kufam";
+	margin-top: 55px;
+	width: 47rem;
+	margin-left: 18rem;
+	text-align: center;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 54px;
+	line-height: 140%;
+	color: #454545;
+}
+.package-title:hover{
+	color: $primary-text-hover;
+}
+.package-description{
+	width: 660px;
+	height: 72px;
+	font-family: 'Nunito';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 23px;
+	line-height: 150%;
+	text-align: center;
+	color: #454545;
+	margin-left: 18rem;
+}
+
+.card-info {
+	display: flex;
+	align-items: center;
+	padding: 0px;
+	gap: 193px;
+	width: 352px;
+	height: 44px;
+}
+.cards-info {
+	display: flex;
+	align-items: center;
+	padding: 0px;
+	gap: 163px;
+	width: 352px;
+	height: 44px;
+}
+.package-info-left{
+	color: $primary-button;
+	font-family: 'Nunito';
+}
+
+.package-info-right {
+	width: 123px;
+	padding: 7px;
+	font-family: "Nunito";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 13px;
+	line-height: 150%;
+	color: #1da599;
+	background: #c1fffa;
+	text-align: center;
+	border-radius: 20px 0px 0px 20px;
+}
+.package-info-right:hover{
+	background: $primary-button;
+	color:$bg
+}
+
+.card-title {
+	color: #525252;
+	font-family: "Kufam";
+	width: 15rem;
+}
+.card-title:hover{
+	color: $primary-text-hover;
+}
+.package-price {
+	color: #525252;
+	font-family: "Kufam";
+	width: 9rem;
+	font-weight: bold;
+}
+
+samp{
+	color:$bg;
+	font-weight: bold;
+}
+
+.icon {
+	width: 36px;
+	height: 36px;
+	padding: 6px 6px;
+}
+.card-empty{
+	width: 361px;
+	height: 549px;
+	background: #FFFFFF;
+	box-shadow: 0px 4px 20px rgba(29, 165, 153, 0.15);
+	border-radius: 10px;
+
+}
+.empty-card-text {
+	width: 242px;
+	height: 24px;
+	font-family: "Kufam";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 38rem;
+	text-align: center;
+	color: #1da599;
+	display: flex;
+	justify-content: center;
+	margin-left: 61px;
+}
+
+
+// Package Section responsive 
+
+
+@media only screen and (min-width: 992px) and (max-width: 1400px) {
+    .container{
+        width:100%;
+    }
+    .package-title {
+        width: 100%;
+        margin-left: 0;
+    }
+    .package-description{
+        width: 100%;
+        margin-left: 0;
+        font-size: 1rem;
+    }
+    .card {
+        width: 18rem !important;
+    }
+    .card-empty {
+        width: 18rem !important;
+		height: 30rem;
+    }
+    .empty-card-text {
+		margin-left: 5px;
+		display: flex;
+		align-items: center;
+		margin-top: 13rem;
+	}
+    .card-info {
+        gap: 96px;
+        width: 254px;
+    }
+	.cards-info {
+        gap: 69px;
+        width: 254px;
+    }
+
+}
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .container{
+        width:99%;
+    }
+    .package-title {
+		width: 100%;
+		margin-left: 0;
+		font-size: 3rem;
+	}
+    .package-description{
+        width: 100%;
+        margin-left: 0;
+        font-size: 1rem;
+    }
+    .card {
+        width: 18rem !important;
+    }
+    .card-empty {
+        width: 18rem !important;
+		height: 30rem;
+    }
+    .empty-card-text {
+		margin-left: 5px;
+		display: flex;
+		align-items: center;
+		margin-top: 13rem;
+	}
+    .card-info {
+        gap: 96px;
+        width: 254px;
+    }
+	.cards-info {
+        gap: 69px;
+        width: 254px;
+    }
+
+}
+  @media only screen and (max-width: 767px) {
+   
+	.container{
+		width: 99%;
+	}
+	.package-title {
+        width: 100%;
+        margin-left: 0;
+        font-size: 2rem;
+    }
+    .package-description{
+        width: 100%;
+        margin-left: 0;
+        font-size: 1rem;
+    }
+    .card {
+        width: 18rem !important;
+        
+    }
+    .card-empty {
+        width: 18rem !important;
+		height: 30rem;
+    }
+    .empty-card-text {
+		margin-left: 5px;
+		display: flex;
+		align-items: center;
+		margin-top: 13rem;
+	}
+    .card-info {
+        gap: 96px;
+        width: 254px;
+    }
+    .cards-info {
+        gap: 69px;
+        width: 254px;
+    }
+}

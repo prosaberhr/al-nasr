@@ -1,0 +1,67 @@
+
+@import 'color';
+
+
+// Navber 
+.navbar-nav {
+	display: flex;
+	margin-left: 10rem;
+	gap: 52px;
+    font-family: $button-font-family;
+	
+}
+.active-home{
+    color: $primary-button;
+}
+.active
+.nav-link{
+    color: $primary-text;
+}
+.nav-link:hover{
+    color:$primary-text-hover;
+	// background: $primary-button-hover;
+	border-radius: 9px;
+	transform: scale(0.6s);
+	// box-shadow: 10px 10px 5px lightblue;
+}
+
+.navbar-toggler{
+	background: #FFC265;
+	color: rgba(82, 82, 82, 1)
+}
+.navbar-toggler:hover{
+	border: 2px solid #FFC265;
+	background: white;
+}
+
+// navber responsive 
+
+
+@media only screen and (min-width: 992px) and (max-width: 1400px) {
+    
+	.navbar-nav {
+		text-align: center;
+		gap: 5px;
+		margin: 0px 80px;
+	}
+	 
+    }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .container, .container-md {
+		max-width: 100% !important;
+	}
+	.navbar-nav {
+		text-align: center;
+		gap: 5px;
+		width: 99%;
+		margin-left: 0px;}
+	}
+  @media only screen and (max-width: 767px) {
+    .container, .container-sm {
+		max-width: 100% !important;
+	}
+	.navbar-nav {
+		text-align: center;
+		gap: 5px; 
+		width: 99%;
+	    margin-left: 0px}}

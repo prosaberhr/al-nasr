@@ -1,0 +1,161 @@
+@import 'color';
+
+// Header Button 
+
+.header-btn {
+	background: #ffc265;
+	color: #525252;
+	width: 188px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 14px;
+	font-family: "Nunito";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 64%;
+	height: 62px;
+}
+.header-btn:hover{
+    border: 2px solid $primary-button;
+    color: $primary-text-hover;
+	box-shadow: 10px 10px 5px lightblue; 
+}
+
+
+
+// Contact-btn
+.Contact-btn {
+	background: #ffc265;
+	color: $primary-text;
+	width: 137px;
+	height: 46px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "Nunito";
+	font-style: normal;
+	font-weight: 696;
+	font-size: 17px;
+	line-height: 60%;
+}
+.Contact-btn:hover{
+    border: 2px solid $primary-button;
+    color: $primary-text-hover;
+	box-shadow: 10px 10px 5px lightblue;
+}
+
+// Hero Two Button
+
+.hero-btn {
+	border: 2px solid #ffc265;
+	color: #1da599;
+	width: 188px;
+	height: 62px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 14px;
+	font-family: "Nunito";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 64%;
+	margin-top: 1rem;
+}
+.hero-btn:hover{
+    background: #ffc265;
+    color: #525252; 
+	box-shadow: 10px 10px 5px lightblue;
+}
+.hero-btns {
+	background: #ffc265;
+    color: #525252;
+	width: 188px;
+	height: 62px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 14px;
+	font-family: "Nunito";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 64%;
+	margin-top: 1rem;
+}
+.hero-btns:hover{
+	border: 2px solid #ffc265;
+    color:$bg; 
+	box-shadow: 10px 10px 5px lightblue;
+}
+
+// Package Buttons
+
+.card-btn {
+	border: 2px solid #ffc265;
+	color: #1da599;
+	width: 139px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "Nunito";
+	font-style: normal;
+	font-size: 15px;
+	line-height: 64%;
+	margin-top: 1rem;
+	font-weight: 715;
+}
+
+.card-btn:hover{
+	background: #ffc265;
+    color: #525252;
+	box-shadow: 10px 10px 5px lightblue;
+}
+
+// Testimonials from our customers two buttons
+
+.review-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 30px;
+	gap: 10px;
+	width: 174px;
+	height: 64px;
+	font-family: "Nunito";
+	border-radius: 10px;
+	color: #525252;
+	font-size: 18px;
+	font-weight: bold;
+	background: $primary-button;
+}
+.review-btn:hover{
+	border: 2px solid $primary-button;
+	color: $primary-text-hover;
+	box-shadow: 10px 10px 5px lightblue;
+}
+
+.next-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 30px;
+	font-family: "Nunito";
+	gap: 10px;
+	width: 174px;
+	height: 64px;
+	border-radius: 10px;
+	color: #525252;
+	font-size: 18px;
+	font-weight: bold;
+	background: #ffc265;
+	margin-left: 70rem;
+}
+.next-button:hover{
+	border: 2px solid $primary-button;
+	color: $primary-text-hover;
+	box-shadow: 10px 10px 5px lightblue;
+}

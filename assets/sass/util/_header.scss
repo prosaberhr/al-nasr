@@ -1,0 +1,294 @@
+@import 'color';
+
+
+// Header
+.header-title{
+    color: $primary-text-hover;
+    background: $primary-title-bg;
+    padding: 1px;
+    width: 175px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    margin-top: 50px;
+}
+
+.header-headline {
+	width: 36rem;
+	font-family: "Kufam";
+	font-weight: bold;
+	font-size: 54px;
+}
+.header-headline:hover{
+    color: $primary-text-hover;
+}
+.header-description {
+	width: 44rem;
+	font-family: "Nunito";
+	font-size: 27px;
+}
+
+
+.video-container {
+	position: relative;
+	display: inline-block;
+	width: 293px;
+	cursor: pointer;
+	left: 173px;
+}
+.video-container img {
+	width: 100%;
+	height: 26rem;
+	display: block;
+}
+.video-icon {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+	padding: 15px;
+}
+.video-icon img {
+    width: 100px;
+    height: 100px;
+}
+.bg-video {
+	position: absolute;
+	background: #1da599;
+	width: 456px;
+	height: 207px;
+	top: 15rem;
+	border-radius: 12px;
+	right: 99px;
+}
+.upper-card {
+	position: absolute;
+	border: 2px solid #ffc265;
+	border-radius: 8px;
+	width: 13rem;
+	z-index: 1;
+	background: #fff;
+	gap: 13px;
+	right: 123px;
+	top: 138px;
+}
+.upper-card:hover{
+	background-color: $primary-button;
+}
+.upper-card-img {
+	width: 60px;
+	height: 60px;
+}
+.upper-card-header {
+	font-size: 12px;
+	font-family: $button-font-family;
+	width: 110px;
+    position: relative;
+}
+
+.upper-card-title {
+	font-family: "Kufam";
+	font-size: 12px;
+	position: absolute;
+	margin-top: 43px;
+    color: $primary-text;
+}
+
+
+.down-card {
+	position: absolute;
+	border: 2px solid #1da599;
+	border-radius: 8px;
+	width: 13rem;
+	z-index: 1;
+	background: #fff;
+	gap: 13px;
+	margin-top: 398px;
+	right: 20rem;
+}
+.down-card:hover{
+	background: $primary-button;
+}
+.down-card-img{
+	width: 60px;
+	height: 60px;
+}
+.down-card-header {
+	font-size: 12px;
+	font-family: "semibold";
+	width: 115px;
+	position: relative;
+}
+
+.down-card-title {
+	font-family: "Kufam";
+	font-size: 12px;
+	position: absolute;
+	margin-top: 43px;
+    color: $primary-text;
+}
+
+
+
+// Header responsive 
+
+
+@media only screen and (min-width: 992px) and (max-width: 1400px) {
+    .container{
+        width:100%;
+    }
+    .header-headline {
+        font-size: 43px;
+        width: 32rem;
+    }
+    .header-description {
+        width: 31rem;
+        font-size: 15px;
+    }
+    .video-container {
+        width: 271px;
+        left: 40px;
+    }
+    .video-container img {
+        height: 20rem;
+    }
+    .video-icon img {
+        width: 100px;
+        height: 100px;
+    }
+    .upper-card {
+        right: 53px;
+        width: 10rem;
+        top: 136px;
+    }
+    .upper-card-img {
+        width: 40px;
+        height: 40px;
+    }
+    .upper-card-header {
+        font-size: 9px;
+        width: 99px;
+    }
+    
+    .upper-card-title {
+        margin-top: 31px;
+    }
+    .down-card {
+        width: 11rem;
+        margin-top: 302px;
+        right: 14rem;
+    }
+    .down-card-img {
+        width: 40px;
+        height: 40px;
+    }
+    .down-card-header {
+        font-size: 9px;
+        width: 99px;
+    }
+    
+    .down-card-title {
+        margin-top: 31px;
+        font-size: 10px;
+    }
+    .bg-video {
+        left: 554px;
+        width: 399px;
+        top: 198px;
+    }
+}
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .container{
+        width:99%;
+    }
+    .header-headline {
+        width: 358px;
+        font-size: 35px;
+    }
+    .header-description {
+        width: 277px;
+        font-size: 12px;
+    }
+    .header-btn {
+        width: 164px;
+    }
+    .header-video {
+        margin-top: 104px;
+    }
+    .video-container {
+        width: 271px;
+        left: 45px;
+        top: 30px;
+    }
+    .video-container img {
+        height: 19rem;
+    }
+    .video-icon img {
+        width: 100px;
+        height: 100px;
+    }
+    .upper-card {
+        top: 7rem;
+        right: 86px;
+    }
+    .down-card {
+        margin-top: 19rem;
+        right: 84px;
+    }
+    .bg-video {
+        top: 207px;
+        left: 394px;
+        width: 335px;
+    }
+}
+  @media only screen and (max-width: 767px) {
+   
+	.container{
+		width: 99%;
+	}
+    .header{
+        flex-direction: column;
+    }
+
+    .header-headline {
+        width: 358px;
+        font-size: 35px;
+    }
+    .header-description {
+        width: 277px;
+        font-size: 12px;
+    }
+    .header-btn {
+        width: 164px;
+    }
+    .header-video {
+        margin-top: 104px;
+    }
+    .video-container {
+        width: 271px;
+        left: 45px;
+        top: 30px;
+    }
+    .video-container img {
+        height: 19rem;
+    }
+    .video-icon img {
+        width: 100px;
+        height: 100px;
+    }
+    .upper-card {
+        top: 7rem;
+        right: 86px;
+    }
+    .down-card {
+        margin-top: 19rem;
+        right: 84px;
+    }
+    .bg-video {
+        top: 207px;
+        left: 94px;
+        width: 335px;
+    }
+}

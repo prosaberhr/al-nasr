@@ -1,0 +1,42 @@
+@import 'base/reset';
+@import 'util/color';
+@import 'mediaquery/responsive';
+
+
+
+
+//////////// Facilities/////////////\\\\\\\\\\
+
+
+.pageheaders{
+    background: $bg;
+    height: 20rem;
+}
+.pageheaders__left h3{
+    display: flex;
+    justify-content: center;
+    line-height:311px ;
+    font-family: $text-font-family;
+    color: white;
+    font-size: 70px;
+}
+.card-body {
+	text-align: center;
+	padding: 50px 23px;
+    font-size: 70px;
+    color: $bg;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.card{
+    color: $primary-text;
+    border: 2px solid $bg;
+
+}
+
+.card-body:hover{
+    background: $bg;
+    color: rgb(255, 255, 255);
+    box-shadow: inset 200px 0 0 0 $bg;
+
+}
